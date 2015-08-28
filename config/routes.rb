@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :meals
+  
   root 'pages#index'
 
   get 'home' => 'pages#home'
