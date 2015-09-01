@@ -2,3 +2,42 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.btn,
+.navbar-inverse,
+.form-control{
+	border-radius: 0px;
+}
+
+p {
+	font-size: 1.1em;
+}
+
+
+/* footer */
+footer {
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  list-style: none;
+  font-size: 1.3em;
+}
+footer a {
+  color: #555;
+  
+}
+footer a:hover {
+  color: #222;
+}
+footer small {
+  float: left;
+}
+footer ul {
+  float: right;
+  list-style: none;
+}
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
