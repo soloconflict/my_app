@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 	
-	resources :articles
-	
 	root 'pages#index'
 	
 	get 'home' => 'pages#home'
