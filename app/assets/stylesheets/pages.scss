@@ -4,6 +4,9 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 
 .btn,
 .navbar-inverse,
@@ -41,3 +44,4 @@ footer ul li {
   float: left;
   margin-left: 15px;
 }
+
