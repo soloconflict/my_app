@@ -10,8 +10,7 @@ class ContactsController < ApplicationController
 			name = params[:contact][:name]
 			email = params[:contact][:email]
 			body = params[:contact][:comments]
-			
-			Contact_mailer.contact_email(name, email, body).deliver
+			ContactMailer.contact_email(name, email, body).deliver
 			
 			
 			flash[:success] = "Message sent."
