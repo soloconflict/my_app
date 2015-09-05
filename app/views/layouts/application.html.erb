@@ -44,10 +44,14 @@
 				<button type="submit" class="btn btn-default">Submit</button>
 			</form>
 			
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Sign Up</a></li>
-				<li><a href="#"><i class="fa fa-sign-in fa-fw"></i>Log In</a></li>
-			</ul>
+			<div class="nav navbar-nav navbar-right">
+				<% if current_user %>
+					<%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-default navbar-btn' %>
+				<% else %>
+					<%= link_to "Log In", new_user_session_path, class: 'btn btn-default navbar-btn', method: :get %>
+					<%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-default navbar-btn', method: :get %>
+				<% end %>
+			</div>
 
 		</div><!-- /.navbar-collapse -->
 	</nav>
@@ -65,7 +69,7 @@
 	<footer class="footer">
 		<div class="container">
 			<ul>
-				<li>&copy He-Chun Chang</li>
+				<li><%= link_to "&copy He-Chun Chang", about_path %> </li>
 				<li><%= link_to "Contact ME", new_contact_path %> </li>
 				<li><%= icon 'facebook-official' %></li>
 				<li><i class="fa fa-spotify"></i></li>
