@@ -53,4 +53,15 @@ footer ul li {
 
 .alert {
 	text-align: center;
+	
 }
+
+.alert-notice,
+.alert-alert {
+	color: #707070;
+	background: rgba(252, 255, 236, 0.92);
+	border-radius: 0px;
+	margin: 0px;	
+	font-size: 1.2em;
+}
+
